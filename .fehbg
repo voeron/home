@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/sami/Downloads/cheatsheet-debian.png'
+feh --no-fehbg --bg-fill '/home/sami/wallpapers/cheatsheet-debian.png'
