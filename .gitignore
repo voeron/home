@@ -1,0 +1,28 @@
+# Ignore everything
+*
+
+# Keep track on these files
+!.Xauthority
+!.Xresources
+!.bashrc
+!.dmrc
+!.fehbg
+!.xinitrc
+!.xsessionrc
+!.zshrc
+!install.sh
+!.gitignore
+
+# Keep track on these folders
+!.config/
+!.config/**
+!.fonts/
+!.fonts/**
+!.local/share/icons/
+!.local/share/icons/**
+!.screenlayout/
+!.screenlayout/**
+
+# Ignore this because it is git clone
+.local/share/nvim/site/pack/packer/start/*
+.config/gh/*

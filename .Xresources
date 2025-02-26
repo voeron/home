@@ -1,0 +1,38 @@
+Xcursor.theme : volantes_light_cursors
+
+! special
+*.foreground:   #ffffff
+*.background:   #181b1d
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #181b1d
+*.color8:       #373f42
+
+! red
+*.color1:       #690f0f
+*.color9:       #b51919
+
+! green
+*.color2:       #4c690f
+*.color10:      #84b519
+
+! yellow
+*.color3:       #b58419
+*.color11:      #ffba24
+
+! blue
+*.color4:       #0f4c69
+*.color12:      #1984b5
+
+! magenta
+*.color5:       #690f4c
+*.color13:      #b51984
+
+! cyan
+*.color6:       #0f694c
+*.color14:      #19b584
+
+! white
+*.color7:       #6d7375
+*.color15:      #ffffff
