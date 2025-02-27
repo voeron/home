@@ -39,12 +39,20 @@ return require('packer').startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim"} -- smarter indent
 
   -- alpha dashboard
+  --use {
+  --	'goolord/alpha-nvim',
+  --	  	requires = { 'kyazdani42/nvim-web-devicons' },
+  --		  config = function ()
+  --              	require'alpha'.setup(require'alpha.themes.dashboard'.config)
+  --            end
+  --  }
+
   use {
-  	'goolord/alpha-nvim',
-	  	requires = { 'kyazdani42/nvim-web-devicons' },
-		  config = function ()
-                	require'alpha'.setup(require'alpha.themes.dashboard'.config)
-                end
+    'goolord/alpha-nvim',
+    requires = { 'echasnovski/mini.icons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
   }
  -- use { "neovim/nvim-lspconfig"} -- enable LSP
   use { "williamboman/mason.nvim"}
