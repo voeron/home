@@ -19,7 +19,15 @@ apt upgrade -y
 # Installing Essential Programs 
 # these are chris titus programs -> nala install feh kitty rofi picom thunar nitrogen lxpolkit x11-xserver-utils unzip wget pipewire wireplumber pavucontrol build-essential libx11-dev libxft-dev libxinerama-dev libx11-xcb-dev libxcb-res0-dev zoxide xdg-utils -y
 # these are mine
-apt install xserver-xephyr lightdm lightdm-gtk-greeter slick-greeter neovim bspwm kitty polybar rofi sxhkd thunar build-essential picom feh xorg arandr firefox-esr zip unzip zsh zsh-autosuggestions zsh-syntax-highlighting vim-gtk3 ripgrep fd-find xclip python3-venv luarocks golang-go shellcheck curl tldr -y
+apt install xserver-xephyr lightdm lightdm-gtk-greeter slick-greeter bspwm kitty polybar rofi sxhkd thunar build-essential picom feh xorg arandr firefox-esr zip unzip zsh zsh-autosuggestions zsh-syntax-highlighting vim-gtk3 ripgrep fd-find xclip python3-venv luarocks golang-go shellcheck curl tldr -y
+
+# Installing specific version of neovim because of plugin conflicts
+curl -L -O "https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb"
+sudo apt install ./nvim-linux64.deb
+# if this fails install
+# use this:
+# sudo dpkg -i --force-overwrite ./nvim-linux64.deb
+# sudo apt -f install
 
 # these are chris titus programs Installing Other less important Programs
 # nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji lightdm -y
