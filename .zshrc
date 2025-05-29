@@ -259,3 +259,5 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
