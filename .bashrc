@@ -114,3 +114,5 @@ fi
 
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
