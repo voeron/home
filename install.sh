@@ -19,8 +19,11 @@ apt upgrade -y
 # Installing Essential Programs 
 # these are chris titus programs -> nala install feh kitty rofi picom thunar nitrogen lxpolkit x11-xserver-utils unzip wget pipewire wireplumber pavucontrol build-essential libx11-dev libxft-dev libxinerama-dev libx11-xcb-dev libxcb-res0-dev zoxide xdg-utils -y
 # these are mine
-apt install xserver-xephyr lightdm lightdm-gtk-greeter slick-greeter bspwm kitty neovim polybar rofi sxhkd thunar build-essential picom feh xorg arandr firefox-esr zip unzip zsh zsh-autosuggestions zsh-syntax-highlighting vim-gtk3 ripgrep fd-find xclip python3-venv luarocks golang-go shellcheck curl tldr -y
+apt install xserver-xephyr lightdm lightdm-gtk-greeter slick-greeter bspwm kitty polybar rofi sxhkd thunar build-essential picom feh xorg arandr firefox-esr zip unzip zsh zsh-autosuggestions zsh-syntax-highlighting vim-gtk3 ripgrep fd-find xclip python3-venv luarocks golang-go shellcheck curl tldr -y
 
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 # Installing specific version of neovim because of plugin conflicts
 # curl -L -O "https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb"
 # sudo apt install ./nvim-linux64.deb
